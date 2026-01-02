@@ -10,7 +10,12 @@ app = FastAPI(title="Champ Code Academy API")
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://nanopoker.github.io",
+        "https://*.github.io",  # Allow all GitHub Pages subdomains
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
