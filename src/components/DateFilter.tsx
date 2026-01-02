@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { format, startOfMonth, endOfMonth, startOfYear, endOfYear } from 'date-fns';
+import { format, startOfMonth, endOfMonth } from 'date-fns';
 
 interface DateFilterProps {
   onFilterChange: (startDate: Date | null, endDate: Date | null) => void;

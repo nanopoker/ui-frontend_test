@@ -100,7 +100,7 @@ const Dashboard = () => {
   }, [filteredLessons]);
 
   const renderLessonSection = (
-    title: string,
+    _title: string,
     lessons: Lesson[],
     emptyMessage: string
   ) => {
