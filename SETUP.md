@@ -7,23 +7,18 @@
 
 ## Backend Setup
 
-1. Navigate to the backend directory:
-```bash
-cd backend
-```
-
-2. Create a virtual environment (recommended):
+1. Create a virtual environment (recommended):
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install dependencies:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the backend server:
+3. Run the backend server:
 ```bash
 python main.py
 ```
@@ -32,17 +27,12 @@ The API will be available at `http://localhost:8000`
 
 ## Frontend Setup
 
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+2. Start the development server:
 ```bash
 npm run dev
 ```
@@ -67,19 +57,25 @@ The frontend will be available at `http://localhost:5173`
 
 ```
 .
-├── backend/
-│   ├── main.py              # FastAPI application
-│   ├── requirements.txt     # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── store/          # Zustand state management
-│   │   ├── services/       # API service layer
-│   │   ├── types/          # TypeScript types
-│   │   ├── App.tsx         # Main app component
-│   │   └── main.tsx        # Entry point
-│   ├── package.json        # Node dependencies
-└── README.md               # Project overview
+├── main.py                 # FastAPI application
+├── requirements.txt        # Python dependencies
+├── venv/                   # Python virtual environment
+├── src/
+│   ├── components/         # React components
+│   ├── store/              # Zustand state management
+│   ├── services/           # API service layer
+│   ├── types/              # TypeScript types
+│   ├── App.tsx             # Main app component
+│   └── main.tsx            # Entry point
+├── package.json            # Node dependencies
+├── package-lock.json       # Node dependencies lock file
+├── index.html              # HTML entry point
+├── vite.config.ts          # Vite configuration
+├── tailwind.config.js      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+├── postcss.config.js       # PostCSS configuration
+├── node_modules/           # Node dependencies
+├── README.md               # Project overview
 └── SETUP.md                # Project setup guidance
 
 ```
